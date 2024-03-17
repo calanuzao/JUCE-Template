@@ -1,65 +1,35 @@
-# 🐺 WolfSound's Audio Plugin Template
+# Audio Plugin Template
 
-![Cmake workflow success badge](https://github.com/JanWilczek/audio-plugin-template/actions/workflows/cmake.yml/badge.svg)
+Audio Plugin Template
 
-Want to create an audio plugin (e.g., a VST3 plugin) with C++ but don't know how to go about?
+CMake Workflow Success Badge
 
-Heard about the [JUCE C++ framework](https://github.com/juce-framework/JUCE) but not sure how to start a JUCE project?
+Are you looking to develop an audio plugin using C++ but unsure where to start?
 
-Want to use CMake with JUCE but don't know how?
+Introducing the Audio Plugin Template, a JUCE C++ framework-based project template with a CMake-based project structure. With this template, you can kickstart your audio plugin development effortlessly.
 
-Want to be able to easily integrate third-party C++ libraries to your project?
+Features:
+Clear Project Structure: Get started quickly with a well-organized repository structure.
+Latest C++ Standards: Utilize modern C++ features with support for C++23 standard.
+Effortless Dependency Management: Easily integrate third-party C++ libraries using the CPM package manager, alongside JUCE.
+Safety First: Ensure code safety with the highest warning level and "treat warnings as errors" settings.
+Ready-to-Use Unit Testing: Start testing your audio plugin with GoogleTest right away.
 
-Want to unit test your audio plugin?
+Additional Benefits:
+Continuous Integration: Enable continuous integration with GitHub Actions, automatically building and testing on each push and pull request.
+Automatic Code Formatting: Never worry about code formatting inconsistencies with automatic clang-format on every commit.
 
-Want to ensure maximum safety of your software?
+Usage:
+Create Your Own Repo: Click "Use this template" on GitHub to create your own repository based on this template.
+Clone Locally: Clone the newly created repository to your local machine.
 
-And all this with a click of a button?
-
-Well, this template allows you to immediately start your JUCE C++ framework audio plugin project with a CMake-based project structure. It involves
-
-* clear repo structure
-* C++ 23 standard
-* effortless handling of third-party dependencies with the CPM package manager; use the C++ libraries you want together with JUCE
-* highest warning level and "treat warnings as errors"
-* ready-to-go unit test project with GoogleTest
-
-Additionally
-
-* continuous integration made easy with Github actions: build and run tests on the main branch and on every pull request
-* automatic clang-format on C++ files run on every commit; don't worry about code formatting anymore!
-
-I am personally using this template all the time.
-
-Feel free to propose suggestions 😉
-
-## Usage
-
-This is a template repository which means you can right click "Use this template" on GitHub and create your own repo out of it.
-
-After cloning it locally, you can proceed with the usual CMake workflow.
-
-In the main repo directory execute
-
-```bash
+Run CMake Workflow:
 $ cmake -S . -B build
 $ cmake --build build
-```
+Note: The first run may take longer as dependencies (CPM, JUCE, and googletest) are downloaded.
 
-The first run will take the most time because the dependencies (CPM, JUCE, and googletest) need to be downloaded.
-
-To run clang-format on every commit, in the main directory execute
-
-```bash
+Enable Clang-Format:
 pre-commit install
-```
+(Install pre-commit with pip if necessary: pip install pre-commit).
 
-(for this you may need to install `pre-commit` with `pip`: `pip install pre-commit`).
-
-Don't forget to change "YourPluginName" to, well, your plugin name everywhere 😉
-
-## How was this template built?
-
-See how I create this template step by step in this video:
-
-[![Audio plugin template tutorial video](http://img.youtube.com/vi/Uq7Hwt18s3s/0.jpg)](https://www.youtube.com/watch?v=Uq7Hwt18s3s "Audio plugin template tutorial video")
+Don't forget to replace "YourPluginName" with your actual plugin name throughout the project.
