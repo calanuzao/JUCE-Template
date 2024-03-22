@@ -23,14 +23,15 @@
 ```bash
 $ cmake -S . -B build
 $ cmake --build build
+```
 
 Note: The first run may take longer as dependencies (CPM, JUCE, and googletest) are downloaded.
 
-## Enable Clang-Format
+# Enable Clang-Format
 
 ```bash
-pre-commit install
-
+$ pre-commit install
+```
 (Install pre-commit with pip if necessary: pip install pre-commit).
 
 Don't forget to replace "YourPluginName" with your actual plugin name throughout the project.
